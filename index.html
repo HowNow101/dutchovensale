@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dutch Oven Cooking Mastery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f5e6d3;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .heading {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            color: #3a2e26;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #665953;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .cards-container {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            position: relative;
+            width: 500px;
+            height: 350px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-content {
+            position: relative;
+            z-index: 1;
+            height: 100%;
+            padding: 30px;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        .card-text {
+            margin-bottom: 25px;
+            line-height: 1.6;
+            max-width: 400px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            text-align: center;
+            width: fit-content;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: #e67e22;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #d35400;
+        }
+
+        .btn-secondary {
+            background-color: #27ae60;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background-color: #219a52;
+        }
+
+        .disclaimer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #665953;
+            padding: 0 20px;
+        }
+
+        .disclaimer a {
+            color: #3a2e26;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Dutch Oven Cooking</h1>
+            <p class="subtitle">
+                Discover the art of versatile cooking with Dutch ovens! From campfire meals to gourmet dishes, unlock endless culinary possibilities with our expert guides and hand-picked equipment.
+            </p>
+        </div>
+
+        <div class="cards-container">
+            <!-- Amazon Card -->
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                <div class="card-content">
+                    <h2 class="card-title">Premium Dutch Ovens</h2>
+                    <p class="card-text">
+                        Get the best Dutch oven for your kitchen. Our top-rated pick features durable cast iron construction and even heat distribution.
+                    </p>
+                    <a href="https://amzn.to/4i8GxYR" class="btn btn-primary" target="_blank">Shop Now →</a>
+                </div>
+            </div>
+
+            <!-- Blog Card -->
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1556910103-1c02745aae4d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                <div class="card-content">
+                    <h2 class="card-title">Expert Recipes</h2>
+                    <p class="card-text">
+                        Explore 50+ delicious Dutch oven recipes - from campfire classics to gourmet meals. Become a master chef today!
+                    </p>
+                    <a href="/blog/dutch-oven-recipes" class="btn btn-secondary">View Recipes →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Affiliate Disclaimer -->
+        <div class="disclaimer">
+            *As an Amazon Associate I may earn from qualifying purchases (at no cost to you). 
+            <a href="https://affiliate-program.amazon.com/" target="_blank">Learn more</a>
+        </div>
+    </div>
+</body>
+</html>
